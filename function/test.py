@@ -1,10 +1,13 @@
 def add(a, b):
-  return a + b
+	return a + b
+
 
 print(add(100, 45))
 
-def mulreturn (a, b):
-  return a+ 10, b + 10
+
+def mulreturn(a, b):
+	return a + 10, b + 10
+
 
 print(mulreturn(5, 8))
 
@@ -22,7 +25,7 @@ a, b, c = 1, 2, 3
 print(a, b, c)
 
 d = 1, 2, 3
-print(d) # tuple
+print(d)  # tuple
 
 e, f, g = [5, 6, 8]
 print(e, f, g)

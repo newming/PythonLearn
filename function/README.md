@@ -72,3 +72,27 @@ e, f, g = [1, 2, 3]
 ```python
 a=b=c=1
 ```
+
+## global 关键字
+
+```py
+a = 10
+def func():
+    a = 20  # 这里会把 a 当作 func 内部的变量使用
+
+b = 30
+def func1():
+    global b
+    b = 20  # 这里 b 会拿外部的变量
+```
+
+## nonlocal 关键字
+
+```py
+def func():
+    a = 10
+    def go():
+        nonlocal a  # 指定 go 函数内部使用的 a 不是自己内部的，这样会向上找
+        a = 20
+    return go
+```

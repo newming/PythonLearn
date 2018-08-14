@@ -9,7 +9,9 @@
 
 
 ```bash
-# mac 安装 python
+# mac 安装 python如果有问题，在试试下边的
+brew install python
+
 # 安装 xcode
 xcode-select --install
 brew install python3 # 报错没有权限去 link
@@ -78,11 +80,11 @@ type([1, 2, 3])
 组的每一项可以是各种不同的类型
 
 ```python
-[1, 2, 3][-1] -> 3 类似于字符串的操作
-[1, 2, 3][1] -> 2 类似于字符串的操作
+[1, 2, 3][-1]   # -> 3 类似于字符串的操作
+[1, 2, 3][1]    # -> 2 类似于字符串的操作
 
-[2] + [3] -> [2, 3]
-[2] * 3 -> [2, 2, 2]
+[2] + [3]   # -> [2, 3]
+[2] * 3    # -> [2, 2, 2]
 ```
 
 ### 元组(有序): (1, 2, 3)
@@ -163,7 +165,7 @@ type(set()) # 正确
 由多个 key value 组成的无序集合，key 值不重复，但是可以是不同数据类型，注意 key 值必须是不可变的类型(字符串，数组，元组，数字)，字符串需要加引号
 
 ```python
-type({1:1, 2: '2'})
+type({1: 1, 2: '2'})
 # <class 'dict'>
 
 # 访问字典属性
@@ -315,6 +317,11 @@ isinstance(a, (str, int, float)) # 是不是后面类型中的一种
 - <<: 左移动
 - >>: 右移动
 
-- [README.md](./start/README.md)
-- [README.md](./function/README.md)
-- [README.md](./oop/README.md)
+- [start](./start/README.md)
+- [function](./function/README.md)
+- [oop](./oop/README.md)
+- [regext](./regexp/README.md)
+- [JSON](./JSON/README.md)
+- [enum枚举](./enum/README.md)
+- [high高阶知识-函数式编程](./high/README.md)
+- [decorator](./decorator/README.md)
