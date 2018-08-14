@@ -9,7 +9,9 @@
 
 
 ```bash
-# mac 安装 python
+# mac 安装 python如果有问题，在试试下边的
+brew install python
+
 # 安装 xcode
 xcode-select --install
 brew install python3 # 报错没有权限去 link

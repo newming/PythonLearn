@@ -7,9 +7,9 @@ class Person():
     # 构造函数，初始化属性，挂载到实例化对象上的属性
     self.name = name
     self.age = age
-    print('init', self.sum1, Person.sum1)
+    print('init', self.sum1, Person.sum1) # 1====> init 0 0
     self.__class__.sum1 += 1
-    print('当前实例化次数为', self.__class__.sum1)
+    print('当前实例化次数为', self.__class__.sum1) # 2=====> 拿到类方法上的属性 当前实例化次数为 1
   def print_file(self):
     print('name: ', self.name, self.sum1)
     print(self.__class__.sum1) # __class__ 拿到的是类变量，就是原型上的属性和方法
@@ -28,7 +28,7 @@ class Person():
     print(Person.people)
 
 xiaoming = Person('xiaoming', 33)
-Person.say() # 调用类方法
+Person.say() # 调用类方法 3=====> people can say 1
 xiaoming.print_file()
 print(xiaoming) # <__main__.Person object at 0x10d49cda0>
 print(xiaoming.name)
