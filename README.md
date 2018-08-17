@@ -80,11 +80,11 @@ type([1, 2, 3])
 组的每一项可以是各种不同的类型
 
 ```python
-[1, 2, 3][-1] -> 3 类似于字符串的操作
-[1, 2, 3][1] -> 2 类似于字符串的操作
+[1, 2, 3][-1]   # -> 3 类似于字符串的操作
+[1, 2, 3][1]    # -> 2 类似于字符串的操作
 
-[2] + [3] -> [2, 3]
-[2] * 3 -> [2, 2, 2]
+[2] + [3]   # -> [2, 3]
+[2] * 3    # -> [2, 2, 2]
 ```
 
 ### 元组(有序): (1, 2, 3)
@@ -317,6 +317,8 @@ isinstance(a, (str, int, float)) # 是不是后面类型中的一种
 - <<: 左移动
 - >>: 右移动
 
-- [README.md](./start/README.md)
-- [README.md](./function/README.md)
-- [README.md](./oop/README.md)
+- [start](./start/README.md)
+- [function](./function/README.md)
+- [oop](./oop/README.md)
+- [regext](./regexp/README.md)
+- [JSON](./JSON/README.md)
