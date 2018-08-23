@@ -322,3 +322,5 @@ isinstance(a, (str, int, float)) # 是不是后面类型中的一种
 - [oop](./oop/README.md)
 - [regext](./regexp/README.md)
 - [JSON](./JSON/README.md)
+- [enum枚举](./enum/README.md)
+- [high高阶](./high/README.md)
