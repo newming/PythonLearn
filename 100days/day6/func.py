@@ -15,7 +15,7 @@ Date: 2018-07-23
 
 # 参数默认值
 def f1(a, b=5, c=10):
-	return a + b * 2 + c * 3
+	return a + b + c
 
 
 print(f1(1, 2, 3))
