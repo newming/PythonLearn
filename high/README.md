@@ -24,3 +24,19 @@
 ## filter 函数
 
 [demo](demo6.py)
+
+## switch...case...
+
+[demo](demo7.py)
+
+## 列表推导式
+
+[demo](demo8.py)
+
+## None
+
+[demo](demo9.py)
+
+## 自定义对象的真假
+
+[demo](demo10.py)
