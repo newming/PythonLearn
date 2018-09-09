@@ -15,10 +15,10 @@ print(e == None)
 
 # 空的字典是 False
 if e:
-    print('e is True')
+	print('e is True')
 
 # 类型：也是自己独有的类型
-print(type(None)) # <class 'NoneType'>
+print(type(None))  # <class 'NoneType'>
 
-print(a is None) # False
-print(None is None) # True
+print(a is None)  # False
+print(None is None)  # True

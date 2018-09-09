@@ -1,12 +1,12 @@
 def add(a, b):
-    return a + b
+	return a + b
 
 
 print(add(100, 45))
 
 
 def mulreturn(a, b):
-    return a + 10, b + 10
+	return a + 10, b + 10
 
 
 print(mulreturn(5, 8))

@@ -1,18 +1,18 @@
 class Person():
-    def __init__(self, name):
-        self.name = name
-        self.score = 0
-        self.__score = 100
+	def __init__(self, name):
+		self.name = name
+		self.score = 0
+		self.__score = 100
 
-    def marking(self, score):
-        if score < 0:
-            score = 0
-        self.score = score
-        print(self.score)
-        print(self.__score)  # 我可以拿到私有变量 100
+	def marking(self, score):
+		if score < 0:
+			score = 0
+		self.score = score
+		print(self.score)
+		print(self.__score)  # 我可以拿到私有变量 100
 
-    def __marking(self):
-        print('i am private')
+	def __marking(self):
+		print('i am private')
 
 
 xiaoming = Person('xiaoming')

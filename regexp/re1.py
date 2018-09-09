@@ -7,5 +7,5 @@ a = 'abc, acc, adc, aec, afc, ahc, _+-*/'
 r = re.findall('a[cf]c', a)
 print(r)
 
-s = re.findall('\w', a)     # \w 包含下划线，不含 + - * / & 等
+s = re.findall('\w', a)  # \w 包含下划线，不含 + - * / & 等
 print(s)
