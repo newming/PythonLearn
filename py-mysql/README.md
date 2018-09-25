@@ -91,6 +91,8 @@ DELETE FROM tbl_name
 
 [安装 mysqlclient](https://pypi.org/project/mysqlclient/)
 
+[docs of mysqlclient](https://mysqlclient.readthedocs.io/user_guide.html#mysqldb)
+
 [解决安装不上的问题，但是2还是安装不上](https://stackoverflow.com/questions/51123044/pip-install-mysql-python)
 
 注意不要用 easy_install pip 去装 pip，就用 官网的方法
