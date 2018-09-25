@@ -91,6 +91,8 @@ DELETE FROM tbl_name
 
 [安装 mysqlclient](https://pypi.org/project/mysqlclient/)
 
+[docs of mysqlclient](https://mysqlclient.readthedocs.io/user_guide.html#mysqldb)
+
 [解决安装不上的问题，但是2还是安装不上](https://stackoverflow.com/questions/51123044/pip-install-mysql-python)
 
 注意不要用 easy_install pip 去装 pip，就用 官网的方法
@@ -98,3 +100,5 @@ DELETE FROM tbl_name
 /Library/Frameworks/Python.framework/Versions/3.7/bin/pip3 这里是 pip3 的 bin 目录，为了能使用 pip2(pip)，将/Library/Frameworks/Python.framework/Versions/3.7/bin/pip 改为了 /Library/Frameworks/Python.framework/Versions/3.7/bin/pip-backup
 
 > 最终，2 和 3 都装上了 mysqlclient
+
+[连接数据库错误 image not found](https://stackoverflow.com/questions/49194719/authentication-plugin-caching-sha2-password-cannot-be-loaded)
