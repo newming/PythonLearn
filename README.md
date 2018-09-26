@@ -1,5 +1,7 @@
 # Python
 
+[pip 注意事项](https://blog.csdn.net/basycia/article/details/52274249)
+
 小楼昨夜又秋风
 
 缺点：

@@ -102,3 +102,40 @@ DELETE FROM tbl_name
 > 最终，2 和 3 都装上了 mysqlclient
 
 [连接数据库错误 image not found](https://stackoverflow.com/questions/49194719/authentication-plugin-caching-sha2-password-cannot-be-loaded)
+
+## ORM
+
+对象关系映射（英语：(Object Relational Mapping，简称ORM，或O/RM，或O/R mapping），是一种程序技术，用于实现面向对象编程语言里不同类型系统的数据之间的转换。从效果上说，它其实是创建了一个可在编程语言里使用的--“虚拟对象数据库”。
+
+python 和 mysql 的主要实现：
+
+- SqlObject
+- peewee
+- Django's ORM
+- SQLAlchemy
+
+### 按装 SQLAlchemy
+
+```bash
+pip install sqlalchemy
+```
+
+检测是否安装成功
+
+```py
+import sqlalchemy
+sqlalchemy.__version__
+```
+
+### ORM 模型简介
+
+一个模型对应一张表
+
+常见类型
+
+- Integer: 整型
+- Float
+- Boolean
+- ForeignKey: 外键
+- Date/DateTime
+- String

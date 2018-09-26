@@ -1,6 +1,6 @@
 import MySQLdb
 
-
+# 查询数据库内容
 class MysqlSearch(object):
     def __init__(self):
         self.get_conn()
@@ -53,15 +53,38 @@ class MysqlSearch(object):
         self.close_conn()
         return result
 
+    def add_one(self):
+        try:
+            # 通过下边的方法，写成元组，分了多行，但是会拼成一行使用
+            sql = (
+                "INSERT INTO `news` (`title`, `content`, `created_at`, `types`, `image`, `author`) VALUE"
+                "(%s, %s, %s, %s, %s, %s);"
+            )
+            cursor = self.conn.cursor()
+            cursor.execute(sql, ('插入标题3', '插入的内容', '2018-09-26 22:20:33', '体育', 'www.newming.cn', 'newming123'))
+            cursor.execute(sql, ('插入标题4', '插入的内容', '2018-09-26 22:20:33', '体育', 'www.newming.cn', 'newming123', '我是错误的数据', '会跑到 except 中，再次 commit ，正确的数据会保存上，我不会'))
+            # 提交事物，修改数据库，可以将多次 execute 操作一起保存到数据库，如果不 commit ，execute 同样会生效，会有数据占到数据库中，但是查不到
+            self.conn.commit()
+            cursor.close()
+        except:
+            print('error')
+            # self.conn.commit() # 如果不进行再次提交，多次 execute 的操作都不会保存
+            self.conn.rollback() # 回滚，所有的 execute 都不生效
+        self.close_conn()
 
 def main():
     obj = MysqlSearch()
+    # 获取单条数据
     # result = obj.get_one()
     # print(result)
-    result = obj.get_more()
-    for item in result:
-        print(item)
-        print('-----')
+    # 获取多条数据
+    # result = obj.get_more()
+    # for item in result:
+    #     print(item)
+    #     print('-----')
+    # 插入一条数据
+    obj.add_one()
+
 
 if __name__ == '__main__':
     main()
