@@ -87,7 +87,7 @@ DELETE FROM tbl_name
 -- 删除数据库、表、索引、视图等(DROP)
 ```
 
-## 连接mysql数据库
+## 连接mysql数据库准备工作
 
 [安装 mysqlclient](https://pypi.org/project/mysqlclient/)
 
@@ -116,6 +116,8 @@ python 和 mysql 的主要实现：
 
 ### 按装 SQLAlchemy
 
+[SQLAlchemy](https://docs.sqlalchemy.org/en/latest/orm/tutorial.html)
+
 ```bash
 pip install sqlalchemy
 ```
@@ -139,3 +141,7 @@ sqlalchemy.__version__
 - ForeignKey: 外键
 - Date/DateTime
 - String
+
+- [sql语句联系](./news.md)
+- [基本使用connect](./connect.py)
+- [数据查询/插入/更新](./search.py)
