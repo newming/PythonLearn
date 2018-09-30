@@ -145,3 +145,6 @@ sqlalchemy.__version__
 - [sql语句联系](./news.md)
 - [基本使用connect](./connect.py)
 - [数据查询/插入/更新](./search.py)
+- [sql语句联系](./news.md)
+- [基本使用connect](./connect.py)
+- [数据查询](./search.py)

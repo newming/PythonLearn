@@ -40,3 +40,7 @@
 ## 自定义对象的真假
 
 [demo](demo10.py)
+
+## 多线程concurrent.futures
+
+[demo](demo11.py)
