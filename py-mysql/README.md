@@ -116,6 +116,8 @@ python 和 mysql 的主要实现：
 
 ### 按装 SQLAlchemy
 
+[SQLAlchemy](https://docs.sqlalchemy.org/en/latest/orm/tutorial.html)
+
 ```bash
 pip install sqlalchemy
 ```
