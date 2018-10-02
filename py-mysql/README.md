@@ -103,6 +103,10 @@ DELETE FROM tbl_name
 
 [连接数据库错误 image not found](https://stackoverflow.com/questions/49194719/authentication-plugin-caching-sha2-password-cannot-be-loaded)
 
+- [sql语句练习](./news.md)
+- [基本使用connect](./connect.py)
+- [数据查询/插入/更新](./search.py)
+
 ## ORM
 
 对象关系映射（英语：(Object Relational Mapping，简称ORM，或O/RM，或O/R mapping），是一种程序技术，用于实现面向对象编程语言里不同类型系统的数据之间的转换。从效果上说，它其实是创建了一个可在编程语言里使用的--“虚拟对象数据库”。
@@ -141,13 +145,3 @@ sqlalchemy.__version__
 - ForeignKey: 外键
 - Date/DateTime
 - String
-
-- [sql语句联系](./news.md)
-- [基本使用connect](./connect.py)
-- [数据查询/插入/更新](./search.py)
-- [sql语句联系](./news.md)
-- [基本使用connect](./connect.py)
-- [数据查询](./search.py)
-- [sql语句联系](./news.md)
-- [基本使用connect](./connect.py)
-- [数据查询](./search.py)
