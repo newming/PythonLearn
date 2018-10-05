@@ -18,3 +18,7 @@ pip3 install pygal
 ```
 
 - [die](./die.py)
+
+## 使用 github API
+
+[search git](./search-git.py)
